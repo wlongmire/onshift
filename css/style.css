@@ -1,0 +1,138 @@
+/*Common*/
+body {
+}
+
+.ui-header {
+	padding-top: 50px;
+}
+
+#title {
+	font-size:90px;
+	font-family: 'Text Me One', sans-serif;
+	padding-left:10px;
+}
+
+#logo {
+	width:55px;
+	height:55px;
+	background-color:red;
+	margin: auto;
+	display:inline-block;
+}
+
+.navbar .ui-btn{
+	padding-bottom:20px;
+}
+
+.navbar .ui-btn-text{
+	/*nav bar heading*/
+	font-size:40px;
+	font-weight: normal;
+}
+
+.doctor_elem {
+	padding-top:20px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.ui-collapsible .ui-btn-inner{
+	/*collapsible header container*/
+	padding: 30px 0;
+}
+
+.ui-collapsible .ui-btn-text {
+	/*collapsible header font attributes*/
+
+	font-size:55px;
+}
+.ui-li-divider {
+	font-size:50px;
+	font-weight: normal;
+}
+
+.time_heading .ui-btn-inner{
+	padding:0;
+}
+
+.ui-link-inherit {
+	font-size:40px;
+}
+
+/*Login*/
+#login_content {
+	text-align: center;
+}
+
+#username, #password{
+	font-size:50px;
+	display:block;
+	width:100%;
+	margin:0;
+}
+
+#login_content .ui-btn {
+	padding:0px;
+	width:80%;
+}
+
+
+#login_content .ui-btn-inner
+{
+	font-size:50px;
+}
+
+/*Department*/
+#department_container {
+	padding:0px;
+	margin:0px;
+	background-color: #333333;
+}
+
+#department_container h1{
+	color: white;
+	padding-left:20px;
+}
+
+#enter_button {
+	font-size:50px;
+}
+
+/*Doctor profile page*/
+.thumbnail_image {
+	width:100px;
+	height:100px;
+}
+
+/*Doctor profile page*/
+.large_thumbnail_image {
+	width:90%;
+	padding:10px;
+}
+
+#doctor_container {
+	text-align:center;
+	padding:0px;
+}
+
+.doctor-name {
+	font-size: 50px;
+	padding:20px 0 0 0;
+	margin:0;
+}
+
+.doctor-department {
+	font-size: 30px;
+	color:grey;
+	font-weight: normal;
+	padding:0 0 20px 0;
+	margin:0;
+}
+
+#text_area {
+	padding: 20px 0;
+}
+
+.js #text_area {
+	display:none;
+}

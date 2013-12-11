@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+	<meta charset="utf-8" />
+
+	<title>OnShift</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body style="height:460px">
+
+	<div data-role="page" id="page1">
+		<div data-theme="a" data-role="header">
+			<h3 id="title">OnShift</h3>
+		</div>
+		<div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="index.html" data-theme="a" rel="external"  data-transition="fade" data-theme="" data-icon="">
+                    	<h3>By Department</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="doctor_list.html" class="ui-btn-active ui-state-persist"  data-theme="a" href="#" data-transition="fade" data-theme="" data-icon="">
+                    	<h3>By Doctors</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"  data-theme="a" data-transition="fade" data-theme="" data-icon="">
+                    	<h3>Sign Out</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <br/>
+
+        <div id="doctor_container" data-role="content"></div>
+
+	</div>
+
+    <div style="display:none" data-role="page" id="doctor_profile">
+        <div data-theme="a" data-role="header">
+            <h3>OnShift</h3>
+        </div>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="index.html" data-theme="a" rel="external" data-transition="fade" data-theme="" data-icon="">
+                        <h3>By Department</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="doctor_list.html" data-theme="a" rel="external" data-transition="fade" data-theme="" data-icon="">
+                        <h3>By Doctors</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-theme="a" data-transition="fade" data-theme="" data-icon="">
+                        <h3>Sign Out</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <br/>
+
+        <div id="doctor_container">
+            
+        </div>
+
+         <div id="com_nav" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a id="page_button" href="#"data-transition="fade" data-theme="b" data-icon="">
+                        <h3>Page</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="call_button"  href="#" data-transition="fade" data-theme="b" data-icon="">
+                        <h3>Call</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="text_button" href="#" data-transition="fade" data-theme="b" data-icon="">
+                        <h3>Text</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="text_area" style="width:100%; text-align:center; background-color:#6D88B3" id="texting_box">
+            <textarea rows="4" cols="50"></textarea>
+            <button style="display:inline; width:20px" id="textbutton">Send</button>
+            <button style="display:inline; width:20px"  id="textbutton">Attach</button>
+        </div>
+    </div>
+
+	<!--scripts -->
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+	<script type="text/javascript" src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.1.min.js"></script>
+	<script type="text/javascript" src="js/code.js"></script></body>
+
+	<script type="text/javascript">
+		doctor_list_page.init({
+            data:department_data
+        });
+	</script>
+</html>

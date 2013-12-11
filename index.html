@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>onShift</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href='css/style.css'>
+	</head>
+
+	<body>
+		
+		<div data-role="page" id="loginPage">
+			<div data-theme="a" data-role="header">
+        		<h3><span id="logo"></span><span id="title">OnShift<span></h3>
+    		</div>
+
+		    <div id="login_content" data-role="content">
+		        <div data-role="fieldcontain" id="username">
+		            <fieldset data-role="controlgroup" data-mini="true">
+		                <label for="username">
+		                </label>
+		                <input name="username" id="username" placeholder="Enter Username" value=""
+		                type="text">
+		            </fieldset>
+		        </div>
+		        <div data-role="fieldcontain" id="password">
+		            <fieldset data-role="controlgroup" data-mini="true">
+		                <label for="password">
+		                </label>
+		                <input name="password" id="password" placeholder="Enter Password" value=""
+		                type="password">
+		            </fieldset>
+		        </div>
+
+		        <a id="enter_button" data-role="button" data-inline="true">Enter</a>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script src="js/code.js"></script>
+		
+	</body>
+</html>
